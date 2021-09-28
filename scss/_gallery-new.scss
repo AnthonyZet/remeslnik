@@ -1,0 +1,50 @@
+.gallery2{
+    display: none;
+}
+
+.gallery2{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10vh;
+   
+}
+
+.gallery-main{
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+    
+}
+
+.gallery-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-main img:hover{
+    transform: scale(1.15);
+}
+
+.gallery-p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.gallery-p img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    background-repeat: 4px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-p img:hover{
+    transform: scale(1.1);
+}

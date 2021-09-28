@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: poppins;
+}
+
+
+
+footer nav{
+    background-color: rgba($color-violet, $alpha: 1.0);
+    width: 100%
+}
+
+footer nav ul{
+    
+     @include flex;
+ 
+   
+     width: 60%;
+     margin: 0 auto;
+     height: 100px;
+    
+     justify-content: space-between;
+    
+     text-align: center;
+     align-items: center;
+     color: #fff;
+     margin-top: 10vh;
+ }
+
+ footer nav ul li{
+     
+    
+    align-content: center;
+ }
+
+section h3{
+    font-size: 190%;
+    text-align: center;
+    font-family: $font-family;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+section ul li i {
+    font-size: 100px;
+    color: red;
+}
+
+
+
+
+
