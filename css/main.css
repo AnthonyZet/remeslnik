@@ -652,4 +652,7 @@ input[type=submit] {
             flex-direction: column;
     height: auto;
   }
+  footer nav ul li {
+    padding: 2%;
+  }
 }
