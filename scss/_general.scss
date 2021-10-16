@@ -3,17 +3,22 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            
 }
 
 html{
     
     padding: 0;
     scroll-behavior: smooth;
+    //overflow-x: hidden; // hide vertical
+
 }
 
 
 body{
     font-family: poppins;
+   // overflow-x: hidden; // hide vertical
+
 }
 
 

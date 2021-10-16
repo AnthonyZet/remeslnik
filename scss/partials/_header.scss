@@ -20,7 +20,7 @@ a{
     position: fixed;
     top: -30px;
     left: 0;
-    z-index: 2;
+    z-index: 10;
     width: 100vw;
     height: 100px;
    
@@ -28,6 +28,7 @@ a{
     align-items: center;
     color: rgb(250, 248, 219);
     padding: 35px 100px 0;
+    
 }
 
 .header h2 {
@@ -40,13 +41,15 @@ a{
 
 .header nav ul {
     @include flex;
- 
+   
+    z-index: 1;
     
 }
 
 .header nav ul li {
     margin: 0 15px;
 }
+
 
 .header nav ul li:first-child {
     margin-left: 0;

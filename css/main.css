@@ -83,7 +83,7 @@ a {
   position: fixed;
   top: -30px;
   left: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100vw;
   height: 100px;
   -webkit-box-pack: justify;
@@ -107,6 +107,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 .header nav ul li {
@@ -541,9 +542,9 @@ input[type=submit] {
 }
 
 @media (max-width: 1000px) {
-  /*.banner-area{
-        padding: 100px 50px;
-    }*/
+  .banner-area {
+    padding: 100px 50px;
+  }
   .gallery-flex-1__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 44%;
