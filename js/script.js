@@ -17,4 +17,6 @@ $(document).ready(function() {
   $('.flex-btn').click(function(){
     $('.gallery2').css({display: "block"});
 })
+
+$('[data-aos]').parent().addClass('hideOverflowOnMobile');
   });

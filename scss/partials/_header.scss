@@ -20,8 +20,8 @@ a{
     position: fixed;
     top: -30px;
     left: 0;
-    z-index: 10;
-    width: 100%;
+    z-index: 2;
+    width: 100vw;
     height: 100px;
    
     justify-content: space-between;
@@ -36,14 +36,11 @@ a{
     
 }
 
-.header nav{
-    
-    right: 5%;
-    
-}
+
 
 .header nav ul {
     @include flex;
+ 
     
 }
 
@@ -70,6 +67,6 @@ a{
 
 .hamburgerMenu,
 .closeMenu{
-    margin-right: 5vw;;
+   // margin-right: 5vw;
 }
 
