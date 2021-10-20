@@ -10,6 +10,9 @@
     .header nav ul li{
         font-size:80%;
     }
+    .gallery-main{
+        width: 80vw;
+    }
 }
 
 @media( max-width: 1000px){
@@ -26,6 +29,8 @@
         height: 8vw;
         margin: 0.5vw;
     }
+
+   
 }
 
 @media (max-width: 813px){
@@ -58,10 +63,12 @@
       width: 50vw;
      } 
      
+     
      .gallery-main{
-        width: 80vw;
-        
-     }
+        width: 90%;
+        height: 90%;
+    }
+    
 
      .gallery-main img:hover{
         transform: scale(1);

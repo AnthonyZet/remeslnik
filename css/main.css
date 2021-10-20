@@ -8,10 +8,12 @@
 html {
   padding: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: poppins;
+  overflow-x: hidden;
 }
 
 footer nav {
@@ -271,15 +273,91 @@ a {
   margin-top: 10vh;
 }
 
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.gallery2 .tabs {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Varela Round", sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 5vh;
+}
+
+.gallery2 .tabs li {
+  cursor: pointer;
+}
+
+.gallery2 .tabs li:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  color: #1e3ef0;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    color: #1e3ef0;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    color: #1e3ef0;
+  }
+}
+
+.gallery2 .tabs li:active {
+  color: blue;
+}
+
 .gallery-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60vw;
   height: 50vh;
   margin: 0 auto;
 }
 
 .gallery-main img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -539,6 +617,9 @@ input[type=submit] {
   .header nav ul li {
     font-size: 80%;
   }
+  .gallery-main {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -580,7 +661,8 @@ input[type=submit] {
     width: 50vw;
   }
   .gallery-main {
-    width: 80vw;
+    width: 90%;
+    height: 90%;
   }
   .gallery-main img:hover {
     -webkit-transform: scale(1);
