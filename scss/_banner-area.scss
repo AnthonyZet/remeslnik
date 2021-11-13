@@ -42,21 +42,157 @@
    font-size: 25px;
 }
 
+#banner-area h3{
+  color:$color-white;
+  
+}
+
 .banner-area a.banner-btn{
    font-size: 120%;
    font-weight: 700;
    padding: 15px 35px;
-   background: $color-violet;
+   background: $color-main;
    border-radius: 50px;
 }
 
 
-
 .banner-area{
-   @include flex;
+   //@include flex;
    
   flex-direction: column;
   align-items: center;
  padding: 110px 100px;
 }
+
+
+.banner-area .banner-btn:hover,
+.menu-btn:hover,
+.flex-btn:hover,
+.contact-form .contact-form-btn:hover{
+  background: $gradient1;
+}
+
+
+/*
+Hamburger MENU
+*/
+
+.wrapper{
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+ 
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(35, 47, 49) 100%);
+   clip-path: circle(25px at calc(100% - 45px) 45px);
+   transition: all 0.3s ease-in-out;
+ 
+ }
+ #active:checked ~ .wrapper{
+   clip-path: circle(75%);
+ }
+
+
+ .menu-btn{
+   position: fixed;
+   z-index: 2;
+   right: 20px;
+   
+   top: 20px;
+   height: 50px;
+   width: 50px;
+   text-align: center;
+   line-height: 50px;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #fff;
+   cursor: pointer;
+   
+   background: $color-main;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .wrapper ul{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   list-style: none;
+   text-align: center;
+ }
+ .wrapper ul li{
+   margin: 15px 0;
+ }
+ .wrapper ul li a{
+   color: none;
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: 500;
+   padding: 5px 30px;
+   color: #fff;
+   border-radius: 50px;
+   background: #000;
+   position: relative;
+   line-height: 50px;
+   transition: all 0.3s ease;
+ }
+ 
+ .wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+   background: $color-main;
+  
+  width: 104%;
+  height: 110%;
+  left: -2%;
+
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  animation: rotate 2.5s linear infinite;
+  transition: transform 0.6s ease;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+ 
+ .wrapper ul li a:hover:after{
+   transform: scaleY(1);
+ }
+ 
+ input[type="checkbox"]{
+   display: none;
+ }
+ .content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+   text-align: center;
+   width: 100%;
+   color: #202020;
+ }
+ .content .title{
+   font-size: 40px;
+   font-weight: 700;
+ }
+ .content p{
+   font-size: 35px;
+   font-weight: 600;
+ }
+ 
+ @keyframes rotate {
+   0%{
+     filter: hue-rotate(0deg);
+   }
+   100%{
+     filter: hue-rotate(360deg);
+   }
+ }
+ 
+
+ 
 

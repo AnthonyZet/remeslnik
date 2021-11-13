@@ -18,13 +18,23 @@ html{
 body{
     font-family: poppins;
      overflow-x: hidden; // hide vertical
+     outline:none; 
+}
 
+ul,nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
 }
 
 
 
 footer nav{
-    background-color: rgba($color-violet, $alpha: 1.0);
+    background-image: $color-main;
     width: 100%
 }
 
@@ -60,10 +70,31 @@ section h3{
     margin-bottom: 5vh;
 }
 
-section ul li i {
-    font-size: 100px;
-    color: red;
+section + section h3,
+.tabs li   {
+    background: $color-main;
+   
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
 }
+
+
+
+
+
+section ul li i{
+    font-size: 100px;
+    background: $color-main;
+   
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+}
+
+
 
 
 

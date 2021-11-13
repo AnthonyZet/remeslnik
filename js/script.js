@@ -29,7 +29,38 @@ tabs.forEach(tab => {
   })
 })
 
+/* --------------
+CLOSE Menu
+---------------- */
+/*
+function closeMenu(){
+  const links  = document.querySelectorAll('.wrapper ul li');
+  const checkbox = document.querySelector('#active');
+
+  for(let link of links){
+    link.addEventListener('click', function(){
+      checkbox.click();
+    })
+  }
+
+};
+*/
+
+
 $(document).ready(function() {
+
+  $('.menu-btn').click(function(){
+    $('section, footer').not('section:first-child').toggle();
+    $('.showAllGallery').toggle().css({display: "none"});
+    });
+
+      $('.wrapper ul li').click(function(){
+        $('section, footer').not('section:first-child').show();
+        $('.showAllGallery').css({display: "block"});
+        $('#active').click();
+        
+      });
+
   $('.hamburgerMenu').click(function(){
     $('.hamburgerMenu').fadeOut()/*.css({display: "none" })*/;
     $('.closeMenu, .nav-item').fadeIn(1000);
@@ -42,7 +73,7 @@ $(document).ready(function() {
   })
 
   $('.flex-btn').click(function(){
-    $('.gallery2').css({display: "block"});
+   $('.showAllGallery').css({display: "block"});
 })
 
 $('[data-aos]').parent().addClass('hideOverflowOnMobile');
