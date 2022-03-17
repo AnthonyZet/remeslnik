@@ -30,7 +30,10 @@
         margin: 0.5vw;
     }
 
-   
+   .tab{font-size: 3.3vw}
+   .tab-content div h3{
+    font-size: 3vw;
+   }
 }
 
 @media (max-width: 813px){
@@ -52,6 +55,8 @@
 
    
 
+   
+
     .contact-content li{
         flex: 1 0 100%;
         margin-bottom: 3vh;
@@ -65,8 +70,8 @@
      
      
      .gallery-main{
-        width: 90%;
-        height: 90%;
+        width: 60vw;
+        height: 60vh;
     }
     
 
