@@ -60,6 +60,10 @@ section ul li i {
   color: red;
 }
 
+.hidden {
+  display: none;
+}
+
 nav ul li a {
   font-size: 150%;
   font-weight: 900;
@@ -115,6 +119,8 @@ a {
 
 .header nav ul li {
   margin: 0 15px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 .header nav ul li:first-child {
@@ -125,11 +131,11 @@ a {
   margin-right: 0;
 }
 
-.hamburgerMenu {
+#hamburgerMenu {
   display: none;
 }
 
-.closeMenu {
+#closeMenu {
   display: none;
   text-align: right;
 }
@@ -714,6 +720,7 @@ input[type=submit] {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    text-align: center;
   }
   .header nav ul {
     margin-top: 3vh;
@@ -725,11 +732,16 @@ input[type=submit] {
   .header nav ul li {
     margin-bottom: 3vh;
     display: none;
+    border-bottom: 2px solid skyblue;
+    border-radius: 10%;
   }
-  .header .hamburgerMenu {
+  .header nav ul li:nth-child(1),
+  .header nav ul li:nth-child(5) {
+    border-bottom: none;
+  }
+  #hamburgerMenu {
     display: block;
     text-align: right;
-    margin-top: .7vh;
   }
   footer nav ul li:first-child {
     display: none;

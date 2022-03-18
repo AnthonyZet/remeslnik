@@ -48,6 +48,7 @@ a{
 
 .header nav ul li {
     margin: 0 15px;
+    transition: 250ms;
 }
 
 
@@ -59,18 +60,15 @@ a{
     margin-right: 0;
 }
 
-.hamburgerMenu{
+#hamburgerMenu{
     display: none;
+    
 }
 
-.closeMenu{
+#closeMenu{
     display: none;
     text-align: right;
 }
 
-.hamburgerMenu,
-.closeMenu{
-   // margin-right: 5vw;
-}
 
 

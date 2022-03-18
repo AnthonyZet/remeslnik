@@ -118,6 +118,7 @@
    .header nav{
        width: 90%;
        justify-content: left;
+       text-align: center;
      
    }
     .header nav ul{
@@ -128,14 +129,20 @@
         
         margin-bottom: 3vh;
        display: none;
+       border-bottom: 2px solid skyblue;
+       border-radius: 10%;
+    }
+    .header nav ul li:nth-child(1),
+    .header nav ul li:nth-child(5){
+        border-bottom: none;
     }
 
   
    
-   .header .hamburgerMenu{
+   #hamburgerMenu{
         display: block;
         text-align: right;
-        margin-top: .7vh;
+       
     }
 
   

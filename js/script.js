@@ -29,21 +29,22 @@ tabs.forEach(tab => {
   })
 })
 
+
 $(document).ready(function() {
-  $('.hamburgerMenu').click(function(){
-    $('.hamburgerMenu').fadeOut()/*.css({display: "none" })*/;
-    $('.closeMenu, .nav-item').fadeIn(1000);
+  $('#hamburgerMenu').click(function(){
+    $('#hamburgerMenu').css({display: "none" },2500);
+    $('#closeMenu, .nav-item').fadeIn(1000);
     
 
-    $('.closeMenu,  .nav-item').click(function(){
-        $('.closeMenu, .nav-item').fadeOut();
-        $('.hamburgerMenu').fadeIn(1000);
+    $('#closeMenu,  .nav-item').click(function(){
+        $('#closeMenu, .nav-item').css({display: "none" });
+        $('#hamburgerMenu').fadeIn(1000);
     })
   })
-
   $('.flex-btn').click(function(){
     $('.gallery2').css({display: "block"});
 })
 
 $('[data-aos]').parent().addClass('hideOverflowOnMobile');
-  });
+
+});
