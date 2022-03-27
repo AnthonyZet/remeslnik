@@ -1,5 +1,5 @@
 .gallery2{
-    display: none;
+   // display: none;
 }
 
 .gallery2{
@@ -12,7 +12,7 @@
 
 // Menu
 [data-tab-content] {
-    display: none;
+   display: none;
   }
   
   .active[data-tab-content] {
@@ -112,5 +112,4 @@
 .gallery-p img:hover{
     transform: scale(1.1);
 }
-
 

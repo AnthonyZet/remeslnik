@@ -1,19 +1,35 @@
-const changeImage = (src) =>{
-    document.getElementById("main").src = src;
-}
-const changeImage2 = (src) =>{
-  document.getElementById("main2").src = src;
+
+/*------------
+GALLERY 2
+Switch between photos in gallery
+---------------*/ 
+
+let changeImg = () => {
+  let galleriesTab = document.querySelectorAll('.gallery-p');
+   galleriesTab.forEach(gallery=>{
+    let bigImg = gallery.previousElementSibling.firstElementChild;
+    const images =  gallery.querySelectorAll('img')
+   
+    images.forEach(image=>{
+      image.addEventListener('click', function(){
+        bigImg.src=image.src
+      })
+    })
+     
+   }) 
+
 }
 
-const changeImage3 = (src) =>{
-  document.getElementById("main3").src = src;
-}
+changeImg()
 
-/*
-Finished jobs gallery
-*/
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+
+/*------------
+GALLERY 2
+Switch between tabs
+---------------*/ 
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -29,6 +45,11 @@ tabs.forEach(tab => {
   })
 })
 
+/*------------
+SHOW AND HIDE MENU
+&& GALLERY OF FINISHED JOBS
+
+---------------*/ 
 
 $(document).ready(function() {
   $('#hamburgerMenu').click(function(){
@@ -41,10 +62,31 @@ $(document).ready(function() {
         $('#hamburgerMenu').fadeIn(1000);
     })
   })
+
+  $('.gallery2').hide();
+  $('.flex-btnClose').hide();
+  
+/*------------
+OnClick show gallery nr.2
+&show/hide gallery´s button
+
+---------------*/ 
+
   $('.flex-btn').click(function(){
-    $('.gallery2').css({display: "block"});
+   // $('.gallery2').css({display: "block"}).toggle();
+   $('.flex-btn').hide();
+   $('.flex-btnClose').show();
+   $('.gallery2').show();
+
+})
+
+$('.flex-btnClose').click(function(){
+  $('.gallery2').hide();
+  $('.flex-btnClose').hide();
+  $('.flex-btn').show();
 })
 
 $('[data-aos]').parent().addClass('hideOverflowOnMobile');
 
 });
+

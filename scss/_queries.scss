@@ -129,7 +129,7 @@
         
         margin-bottom: 3vh;
        display: none;
-       border-bottom: 2px solid skyblue;
+       border-bottom: 2px solid white;
        border-radius: 10%;
     }
     .header nav ul li:nth-child(1),
@@ -139,10 +139,10 @@
 
   
    
-   #hamburgerMenu{
+  #hamburgerMenu{
         display: block;
         text-align: right;
-       
+        margin-top: .7vh;
     }
 
   

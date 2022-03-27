@@ -52,3 +52,21 @@ outline: 0;
 	transform: scaleX(1.4) scaleY(1.6);
 	opacity: 0;
 }
+
+.flex-btn,
+.flex-btnClose{
+	@include flex;
+  
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 5vh;
+  
+	  color: #fff;
+	  font-weight: 700;
+	  width: 20vw;
+	  padding: 15px 35px;
+	  background: $color-violet;
+	  border-radius: 50px;
+	  
+  }
+ 
