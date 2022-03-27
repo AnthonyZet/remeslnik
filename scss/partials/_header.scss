@@ -28,6 +28,8 @@ a{
     align-items: center;
     color: rgb(250, 248, 219);
     padding: 35px 100px 0;
+    @include colorGradient;
+    @include boxShadow;
     
 }
 
@@ -48,9 +50,20 @@ a{
 
 .header nav ul li {
     margin: 0 15px;
-    transition: 250ms;
+    transition: 0.4s ease;
+   
 }
 
+.header .navHover{
+    transition: 0.4s ease;
+    &:hover{
+
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    
+    }
+}
 
 .header nav ul li:first-child {
     margin-left: 0;
@@ -69,6 +82,8 @@ a{
     display: none;
     text-align: right;
 }
+
+
 
 
 

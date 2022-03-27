@@ -23,35 +23,6 @@ body{
 
 
 
-footer nav{
-    background-color: rgba($color-violet, $alpha: 1.0);
-    width: 100%
-}
-
-footer nav ul{
-    
-     @include flex;
- 
-   
-     width: 60%;
-     margin: 0 auto;
-     height: 100px;
-    
-     justify-content: space-between;
-    
-     text-align: center;
-     align-items: center;
-     
-     color: #fff;
-    
- }
-
- footer nav ul li{
-     
-    
-    align-content: center;
- }
-
 section h3{
     font-size: 190%;
     text-align: center;

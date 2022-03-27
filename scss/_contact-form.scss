@@ -10,6 +10,7 @@
     box-shadow: 0px 0px 10px 0px #666;
 
     margin-top: 10vh;
+    
 }
 
 .contact-map{
@@ -29,6 +30,7 @@
     height: auto;
     flex: 50%;
     padding: 30px;
+   
 }
 
 .contact-form h1{
@@ -70,11 +72,12 @@
     border: none;
     outline: none;
     border-radius: 50px;
-    background: #8e2de2;
+    background: #5c5166;
     color: #fff;
     text-transform: uppercase;
     padding: 10px 0;
     cursor: pointer;
     font-size: 110%;
     font-weight: 700;
+    @include colorGradient;
 }
